@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo&display=swap'); /* ARCHIVO */
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+
+/*reset css */
+ *{
+    margin:0;
+    box-sizing: border-box;
+  }
+
+/* CSS variable :root level scoping*/
+:root{
+    --cor02:#e7e7e7;
+    --cor01:#0a0908;
+    --fonte01: 'Archivo', sans-serif;
+    --fonte02: 'Nanum Myeongjo', serif;
+   }
+   
+   body{
+    color: var(--cor02);
+    background-color: var(--cor01);
+    font-family: var(--fonte01);
+    width:90%;
+    margin: auto;
+    font-size: 24px;
+    cursor: crosshair;
+}
+
+a, a:active{
+    text-decoration: none;
+    color:var(--cor02);
+}
+
+a:hover{
+    transition-duration: 0.5s;
+    opacity: 80%;
+    text-decoration: underline;
+}
+
+/*-----------------------------------------NAVEGATION*/
+nav{
+    overflow:hidden;
+    padding-top:2.5em ;
+}
+
+nav p{
+    float:right;
+    padding-left:5vw;
+    vertical-align: middle;
+}
+
+nav p:first-child{
+    float:left;
+    padding-left: 0;
+    font-size: 1.5em;
+}
+
+/*-----------------------------------------NAVEGATION FIM*/
+
+.about{
+    width:30%;
+    font-size: 18px;
+    margin-top: 2em;
+    font-weight:lighter;
+}
+
+.about p{
+    padding-bottom: 1em;
+}
+
+#contact{
+    font-size: 0.85em;
+    width:80%;
+    margin-top: 4em;
+}
+
+#info, #selected{
+    opacity: 10%;
+}
+
+#info a, #selected a{
+    text-decoration: none;
+}
+
+#fundo{
+    position: absolute;
+    opacity: 40%;
+    z-index: -1;
+    width:100vw;
+    height:100vh;
+    margin:0;
+    padding:0;
+    left:0;
+    bottom:0;
+}
+/*-----------------------------------------FOOTER*/
+footer{
+     width:90%;
+     position:absolute;
+     bottom:0;
+     padding-bottom: 3em;
+     padding-top: 2em;  
+ }
+ 
+ .foot{
+     float:left;
+     padding-right:5vw;
+ }
+ 
+ .foot:last-child{
+     float:right;
+     padding-right: 0;
+ }
+
+ 
+ #cyon a:hover{
+     text-decoration: none;
+ }
+ /*-----------------------------------------FOOTER FIM*/
+
+ .autophoto img{
+    width:300px;
+    float:right;
+}
+
+.autophoto{
+    position: absolute;
+
+}
+
+#auto2{
+    position: fixed;
+    right:35vw;
+    top:40vh;
+}
+
+#auto1{
+    position: fixed;
+    top:20vh;
+    right:10vw;
+    opacity: 80%;
+}
+ /*-----------------------------------------ABOUT FIM*/
+
+.projetos{
+    margin-top: 2em;
+}
+
+.proj01, .proj02, .proj03, .proj04, .proj05, .proj06{
+    display: flex;
+    width:80%;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    border-top: 1px solid var(--cor02);
+    font-size: 0.7em;
+    float: right;
+    vertical-align: top;
+    transition-duration: 0.5s;
+}
+
+.proj01:hover,.proj02:hover,.proj03:hover,.proj04:hover,.proj05:hover,.proj06:hover{
+    opacity: 40%;
+    transition-duration: 0.5s;
+}
+
+#ano{
+    width:15%;
+}
+
+#tipo{
+    width:25%;
+    text-align: right;
+}
+
+#proj{
+    width:60%;
+}
+
+#with {
+ font-size: 0.5em;
+}
+
+
+.content01, .content02, .content03, .content04, .content05, .content06{
+    display: block;
+    width:80%;
+    float: right;
+    margin-bottom: 5em;
+}
+
+.content01 p, .content02 p,.content03 p, .content04 p,.content05 p, .content06 p{
+    margin-top: 1em;
+    width:100%;
+    font-size: 36px;
+    padding-bottom: 2em;
+}
+
+.content01 img,.content02 img, .content03 img,.content04 img, .content05 img, .content06 img{
+    margin-top: 0.5em;
+    width:100%;
+}
+
+.geral{
+    background-color: lightgray;
+}
+
+.up a{
+    opacity: 20%;
+    font-size: 0.7em;
+  }
+
+  .up a:hover{
+    opacity: 100%;
+  }
+
+  .up{
+    position:fixed;
+    bottom: 2em;
+  }
